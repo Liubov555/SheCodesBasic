@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro embroidery</title>
+</head>
+<style>
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 15px 60px;
+        font-size: 17px;
+    }
+
+    h1 {
+        text-align: center;
+        background-color: #2196F3;
+        color: white;
+    }
+
+    p {
+        text-align: justify;
+        line-height: 1.5;
+        font-size: 15px;
+        margin: 20px 10px;
+    }
+
+    strong {
+        display: block;
+        margin-bottom: 15px;
+        text-align: center;
+        border: 1px solid #2196F3;
+        padding: 10px;
+        font-size: 18px;
+        border-radius: 4px;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+
+    }
+
+    .img-set {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .img-item {
+        margin-right: 10px;
+    }
+
+    button {
+        display: block;
+        margin: 20px auto;
+        background: #2196F3;
+        color: white;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+    }
+
+    button:hover {
+        cursor: pointer;
+        background: white;
+        color: #2196F3;
+        border: 2px solid;
+        border-color: #2196F3;
+    }
+
+    .footer {
+        padding: 10px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>
+            Jewelry set with micro embroidery
+        </h1>
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/035/830/original/ecaa68a423dcd8cf45887031a3df6b85.jpg?1653984805"
+            alt="Jewelry set" width="300">
+
+        <p>
+            Micro embroidery is a type of embroidery in the technique of "petit point". This ancient technique
+            originated in
+            Austria in the 18th century. This technique used by aristocrats. They
+            decorated almost everything with embroidery - from clothes and jewelry to interior items.
+        </p>
+        <strong>
+            Take a look at this amazing sets of jewelry.
+        </strong>
+        <div class="img-set">
+            <img class="img-item"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/035/831/original/08358cc67152edcc8ad82c917c654003.jpg?1653984812"
+                alt="Jewelry set" width="350" height="250">
+            <img class="img-item"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/035/829/original/33121d5e29eb08c46e1611ca7b74fe29.jpg?1653983975"
+                alt="Jewelry set" width="350" height="250">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/035/832/original/bcc3503188abf19bb8de3e377db54279.jpg?1653985412"
+                alt="Jewelry set" width="350" height="250">
+        </div>
+        <button class="buy-button">
+            Buy now
+        </button>
+        <p class="footer">
+            This page was built by Liubov Rohachevska
+        </p>
+    </div>
+</body>
+<script>
+    function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        alert(
+            "Thank you, " + name + "! We'll be in touch by email ☺ "
+        );
+    }
+    let buyButton = document.querySelector("button");
+    buyButton.addEventListener("click", buy);
+</script>
+
+</html>
